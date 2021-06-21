@@ -1,5 +1,5 @@
 {
-  "name": "@davidt/rake-js",
+  "name": "@bboykk1234/rake-js",
   "version": "0.1.1",
   "description": "A pure JS implementation of the Rapid Automated Keyword Extraction (RAKE) algorithm.",
   "main": "dist/lib/index.js",
