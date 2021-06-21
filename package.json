@@ -7,8 +7,7 @@
     "build": "rm -rf dist && npm run pretty && tsc -p .",
     "lint": "tslint -c tslint.json 'src/**/*.ts' --fix",
     "pretty": "prettier --single-quote --no-semi --trailing-comma es5 --write 'src/**/*.ts'",
-    "test": "npm run lint && npm run build && mocha --opts .mocha",
-    "watch": "mocha-typescript-watch --opts .mocha",
+    "test": "npm run lint && npm run build && mocha --config ./mocharc.js",
     "prepublish": "npm run test"
   },
   "keywords": [
@@ -25,20 +24,19 @@
   "author": "Maximilian Stroh (github/Anonyfox)",
   "license": "LGPL-3.0",
   "devDependencies": {
-    "@types/mocha": "^2.2.41",
+    "@testdeck/mocha": "^0.1.2",
+    "@types/mocha": "^8.2.2",
     "@types/node": "^7.0.21",
     "chai": "^3.5.0",
-    "mocha": "^3.4.1",
-    "mocha-typescript": "^1.1.2",
+    "mocha": "^9.0.1",
     "prettier": "^1.5.2",
     "source-map-support": "^0.4.15",
     "tslint": "^5.4.3",
     "tslint-config-prettier": "^1.1.0",
-    "typescript": "^2.3.2"
+    "typescript": "^3.5.1"
   },
   "dependencies": {
     "condense-whitespace": "^1.0.0",
-    "franc": "^3.1.0",
     "lodash": "^4.17.4",
     "snowball": "^0.3.1"
   }

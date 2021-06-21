@@ -1,6 +1,4 @@
-import { map } from 'lodash'
 import Matrix from './data_structures/word_matrix'
-import { languageName } from './tools/guess_language'
 import Parser from './tools/parser'
 import Preprocessor from './tools/preprocessor'
 import Stemmer from './tools/stemmer'
@@ -9,7 +7,14 @@ import load from './tools/stoplist'
 // can be used to tweak the algorithm or to use it without the defaults
 export interface IOptions {
   delimiters: string[]
-  language: languageName
+  language:
+    | 'german'
+    | 'english'
+    | 'italian'
+    | 'dutch'
+    | 'portugese'
+    | 'spanish'
+    | 'swedish'
 }
 
 // the actual parameters for the RAKE algorithm

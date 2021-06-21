@@ -1,5 +1,5 @@
+import { skip, slow, suite, test, timeout } from '@testdeck/mocha'
 import { expect } from 'chai'
-import { skip, slow, suite, test, timeout } from 'mocha-typescript'
 import strip from '../../lib/tools/strip'
 
 @suite(timeout(100), slow(10))

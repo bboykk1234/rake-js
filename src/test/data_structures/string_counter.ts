@@ -1,5 +1,5 @@
+import { skip, slow, suite, test, timeout } from '@testdeck/mocha'
 import { expect } from 'chai'
-import { skip, slow, suite, test, timeout } from 'mocha-typescript'
 import StringCounter from '../../lib/data_structures/string_counter'
 
 @suite(timeout(100), slow(10))

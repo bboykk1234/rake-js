@@ -1,6 +1,6 @@
+import { skip, slow, suite, test, timeout } from '@testdeck/mocha'
 import { expect } from 'chai'
 import { readFileSync } from 'fs'
-import { skip, slow, suite, test, timeout } from 'mocha-typescript'
 import { join } from 'path'
 import { IParameters, rake } from '../lib/rake'
 
